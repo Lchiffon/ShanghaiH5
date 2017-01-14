@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>数据科学与HTML5幻灯片</title>
+  <meta charset="utf-8">
+  <meta name="description" content="数据科学与HTML5幻灯片">
+  <meta name="author" content="">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="../libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../libraries/frameworks/io2012/js/slides" 
+    src="../libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>数据科学与HTML5幻灯片</h1>
+    <h2></h2>
+    <p><br/>郎大为 J.D. Power</p>
+  </hgroup>
+  <article></article>
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>Outlines</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ol>
+<li>数据科学</li>
+<li>可视化</li>
+<li>slidify</li>
+<li>xaringan/shiny</li>
+</ol>
+
+<style>
+.slides article > strong{
+    color:red;
+}
+</style>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="segue dark" id="slide-2" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>数据科学与统计学</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-3" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>数据科学的定义</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <p>谷歌首席经济学家Hal Varian在2009年说，下一个十年最有吸引力的工作就是统计学家。能获取并处理数据，从中得到有用信息并能图形化，并使人们得以理解，这将是非常重要的技能。</p>
+
+<ul>
+<li>在此处他所称的“统计学家”，实际上是能够提取大数据集的信息，然后展现给非数据专家的那些人，我们也可称之为数据极客（Data Geek）或是数据科学家(Data Scientists)。</li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-4" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>数据科学家的JD</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <p><img src="pic/jd.png" class='center' /></p>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-5" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>数据科学</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <p><img src="pic/Data_Science_VD.png" class='center' /></p>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-6" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>统计学</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <p>统计学是在数据分析的基础上，自17世纪中叶产生并逐步发展起来的一门学科。 它是研究如何测定、收集、整理、归纳和分析反映数据资料，以便给出正确信息的科学。</p>
+
+<ul class = "build incremental">
+<li>测定：试验设计</li>
+<li>收集：抽样调查</li>
+<li>整理：数据清理</li>
+<li>归纳：描述统计</li>
+<li>分析：统计推断，假设检验，数理统计，统计模型</li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-7" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>技术栈</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li>分析
+
+<ul>
+<li>R</li>
+<li>Python/Spark</li>
+</ul></li>
+<li>后端
+
+<ul>
+<li>SQL(MySQL/SQL Server/Hive/Oracle)</li>
+<li>Shell &amp;Git</li>
+<li>Pyhton/Node</li>
+</ul></li>
+<li>前端
+
+<ul>
+<li>HTML</li>
+<li>JS(D3,Echarts,jQuery,...)</li>
+</ul></li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-8" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>技术栈</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <p><img src="pic\\Data_Science_Ecosystem.jpg" class="center" height=100px></p>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-9" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>理论储备</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li>统计
+
+<ul>
+<li>概率，随机变量，分布</li>
+<li>假设检验</li>
+<li>统计模型</li>
+</ul></li>
+<li>机器学习
+
+<ul>
+<li>有监督学习</li>
+<li>无监督学习</li>
+</ul></li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-10" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>数据科学家的特质</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li>数据敏感</li>
+<li>好奇心</li>
+<li>story-teller</li>
+<li>学习能力</li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-11" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>数据科学做什么</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <p><img src="pic/what.jpg" class="center" /></p>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-12" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>数据科学的学习大纲</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ol>
+<li>总览(git,Rstudio)</li>
+<li>R语言入门</li>
+<li>读取与清理数据</li>
+<li>数据可视化</li>
+<li>可重复性研究 </li>
+<li>统计推断 </li>
+<li>回归模型 </li>
+<li>机器学习 </li>
+<li>数据产品开发 </li>
+</ol>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-13" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>1总览</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li>了解概念</li>
+<li>学习Git， github</li>
+<li>Rstudio安装使用</li>
+</ul>
+
+<ul class = "build incremental">
+<li><img src='pic/change.jpg' class='center' /></li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-14" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>Git</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li>优秀的版本控制工具</li>
+<li>本地使用</li>
+</ul>
+
+<pre><code># 声明需要添加的文件
+git add -A
+# 存档
+git commit -am &#39;some infomation&#39;
+</code></pre>
+
+<ul>
+<li>可用<code>git log</code>，<code>git reset</code>来恢复存档</li>
+</ul>
+
+<p><img src="pic/git.png" alt=""></p>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-15" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>Github</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li>分享，协作代码平台</li>
+</ul>
+
+<pre><code>## 下载repo
+git clone http://github.com/lchiffon/wordcloud2
+git pull
+## 三板斧
+git add -A
+git commit -am &#39;some infomation&#39;
+git push
+</code></pre>
+
+<p><img src="pic/gitboot.png" alt=""></p>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-16" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>R语言入门</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li>查帮助</li>
+<li>packages使用</li>
+<li>控制语句，函数，apply</li>
+<li>Play with swirl
+<code>
+install.packages(&quot;swirl&quot;)
+swirl()
+</code></li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-17" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>读取与清洗数据</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li>传统数据: .xlsx, .txt, .csv</li>
+<li>数据库: MySQL, SQLserver, mogoDB, HIVE, ...</li>
+<li>其他程序的数据: Matlab, Stata, SAS</li>
+<li>网页数据(爬虫): .json, .html, .xml</li>
+<li>地理信息数据: .topojson, .geojson, .shp, .map</li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-18" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>数据可视化</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li>静态: ggplot2.org/doc </li>
+<li>动态: htmlwidgets</li>
+</ul>
+
+<p>静态可视化适合用于探索型可视化，论文，书籍等展示形式</p>
+
+<p>web可视化适合在网页，H5页面，App，产品中使用，更多用于展示型可视化</p>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-19" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>可重复研究</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li><code>knitr</code>与<code>rmarkdown</code></li>
+<li>生成html, docx, pdf, slides, dashboard</li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-20" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>统计推断</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li>传统的概率论与数理统计课程， 学习统计相关的内容</li>
+</ul>
+
+<h2>回归分析</h2>
+
+<ul>
+<li>经典的回归分析</li>
+<li>logistic回归</li>
+<li>各种异常情况的处理</li>
+</ul>
+
+<h2>机器学习</h2>
+
+<ul>
+<li>有监督学习</li>
+<li>无监督学习</li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-21" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>开发数据产品</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li>开发端： package</li>
+<li>产品端： shiny</li>
+<li>报告端： slidify</li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="segue dark" id="slide-22" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>web可视化</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-23" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>Topic</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li><a href="../2016SH/index.html">REmap</a></li>
+<li><a href="../Nanchang/index.html">其他可视化</a></li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="segue dark" id="slide-24" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>HTML5的幻灯片</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-25" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>HTML5的幻灯片</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li><a href="../slidify">slidify</a></li>
+<li><a href="../xaringan/Untitled/Untitled.html">xaringan</a></li>
+<li>Rpres</li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-26" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>slidify与可视化</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ol>
+<li>保存并使用iframe</li>
+<li>在slidify中转为静态图片</li>
+<li>xaringan中使用<code>eval=require(&#39;leafletCN&#39;)</code></li>
+</ol>
+
+<pre><code>    &lt;iframe data-src=&quot;html/pall.html&quot; height=&quot;600px&quot; width=&quot;800px&quot;&gt;&lt;/iframe&gt;
+</code></pre>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+<slide class="" id="slide-27" style="background:;background-image:url()" >
+  <hgroup>
+    <h2>Contact Me</h2>
+  </hgroup>
+  <div class="slide-div1"></div>
+  <article data-timings="">
+    <ul>
+<li>邮箱：
+
+<ul>
+<li><a href="mailto:dawei_lang@sina.cn">dawei_lang@sina.cn</a></li>
+</ul></li>
+<li>微博：
+
+<ul>
+<li>@郎大为Chiffon</li>
+</ul></li>
+</ul>
+
+  </article>
+  <div class="slide-div2">
+    <p class="slide-title"><strong>数据科学与HTML5幻灯片</strong></p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Outlines'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='数据科学与统计学'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='数据科学的定义'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='数据科学家的JD'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='数据科学'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='统计学'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='技术栈'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='技术栈'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='理论储备'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='数据科学家的特质'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='数据科学做什么'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='数据科学的学习大纲'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='1总览'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Git'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Github'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='R语言入门'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='读取与清洗数据'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='数据可视化'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='可重复研究'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title='统计推断'>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title='开发数据产品'>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='web可视化'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Topic'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='HTML5的幻灯片'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='HTML5的幻灯片'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='slidify与可视化'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Contact Me'>
+         27
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="../libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="../libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="../libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
