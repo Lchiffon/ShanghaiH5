@@ -16,7 +16,7 @@ knit        : slidify::knit2slides
 1. 数据科学
 2. 可视化
 3. slidify
-4. xaringan/shiny
+4. xaringan
 
 <style>
 .slides article > strong{
@@ -214,17 +214,17 @@ web可视化适合在网页，H5页面，App，产品中使用，更多用于展
 
 ---
 ## Topic
-- [REmap](../2016SH/index.html)
-- [其他可视化](../Nanchang/index.html)
+- [REmap](../Nanchang/index.html?theme=sky)
+- [其他可视化](../2016SH/index.html?theme=sky)
 
 ---.segue .dark
 ## HTML5的幻灯片
 
 ---
 ## HTML5的幻灯片
-- [slidify](../slidify)
+- slidify
 - [xaringan](../xaringan/Untitled/Untitled.html)
-- Rpres
+- ~~Rpres~~
 
 ---
 ## slidify与可视化
